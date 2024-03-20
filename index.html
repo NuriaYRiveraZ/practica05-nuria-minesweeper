@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>[Práctica 05] Minesweeper</li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="header">
+            <div class="formulario-juego">
+                <div class="formulario">
+                    <div class="entrada">
+                        <label for="tamaño">Tamaño (min 5, max 20): </label>
+                        <input id="tamaño" type="number" min="5" max="20" value="0">
+                    </div>
+                    <div class="entrada">
+                        <label for="num-bombas">Número de bombas (min 1): </label>
+                        <input id="num-bombas" type="number" min="1" value="0">
+                    </div>
+                </div>
+                <button class="btn-generar">Generar / Reiniciar</button>
+            </div>
+        </div>
+    
+        <div class="contenedor-juego hidden">
+            <div class="tablero">
+                <h2>Banderas colocadas: <span id="num-banderas"></span> (faltan <span id="banderas-restantes"></span>)</h2>
+                <div class="juego"></div>
+                <div class="resultado-juego"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
